@@ -68,7 +68,7 @@ gem 'omniauth-dropbox-oauth2', github: 'bamorim/omniauth-dropbox-oauth2', ref: '
 gem 'haversine'
 
 # EvernoteAgent
-gem 'omniauth-evernote'
+gem 'omniauth-evernote', '>= 1.2.1'
 gem 'evernote_oauth'
 
 # LocalFileAgent (watch functionality)
