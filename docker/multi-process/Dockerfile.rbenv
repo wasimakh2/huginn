@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:groovy-20210614
 # MAINTAINER Someone <someone@example.com>
 
 # Update package list
