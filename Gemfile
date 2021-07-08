@@ -47,7 +47,7 @@ gem 'hypdf', '~> 1.0.10'          # PDFInfoAgent
 gem 'weibo_2', github: 'albertsun/weibo_2', branch: 'master'
 
 # GoogleCalendarPublishAgent and GoogleTranslateAgent
-gem 'google-api-client', '~> 0.13'
+gem 'google-api-client', '~> 0.13', '>= 0.13.0'
 gem 'google-cloud-translate', '~> 1.0.0', require: 'google/cloud/translate'
 
 # Twitter Agents
@@ -152,10 +152,10 @@ group :development do
 
   group :test do
     gem 'coveralls', '~> 0.8.23', require: false
-    gem 'capybara', '~> 2.18'
-    gem 'capybara-screenshot'
+    gem 'capybara', '~> 2.18', '>= 2.18.0'
+    gem 'capybara-screenshot', '>= 1.0.17'
     gem 'capybara-select-2', github: 'Hirurg103/capybara_select2', ref: 'fbf22fb74dec10fa0edcd26da7c5184ba8fa2c76', require: false
-    gem 'poltergeist'
+    gem 'poltergeist', '>= 1.8.1'
     gem 'pry-rails'
     gem 'pry-byebug'
     gem 'rr'
