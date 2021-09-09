@@ -131,7 +131,7 @@ gem 'uglifier', '~> 2.7.2'
 gem 'bootsnap', '~> 1.4.4', require: false
 
 group :development do
-  gem 'better_errors', '~> 1.1'
+  gem 'better_errors', '~> 2.8', '>= 2.8.0'
   gem 'binding_of_caller', '~> 0.8.0'
   gem 'guard', '~> 2.14.1'
   gem 'guard-livereload', '~> 2.5.1'
