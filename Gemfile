@@ -117,7 +117,7 @@ gem 'loofah', '~> 2.0'
 gem 'mini_magick', ">= 4.9.4"
 gem 'multi_xml'
 gem "nokogiri", ">= 1.10.8"
-gem 'omniauth', '~> 1.6.1'
+gem 'omniauth', '~> 2.0.0'
 gem 'rails', '~> 6.0.3.1'
 gem 'sprockets', '~> 3.7.2'
 gem 'rails-html-sanitizer', '~> 1.2'
