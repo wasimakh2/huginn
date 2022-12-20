@@ -89,7 +89,7 @@ unless Gem::Version.new(Bundler::VERSION) >= Gem::Version.new('1.5.0')
 end
 
 gem 'ace-rails-ap', '~> 2.0.1'
-gem 'bootstrap-kaminari-views', '~> 0.0.3'
+gem 'bootstrap-kaminari-views', '~> 0.0.5'
 gem 'bundler', '>= 1.5.0'
 gem 'coffee-rails', '~> 5'
 gem 'daemons', '~> 1.1.9'
@@ -119,10 +119,10 @@ gem 'multi_xml'
 gem "nokogiri", ">= 1.10.8"
 gem 'omniauth', '~> 1.6.1'
 gem 'rails', '~> 6.0.3.1'
-gem 'sprockets', '~> 3.7.2'
+gem 'sprockets', '~> 4.2.0'
 gem 'rails-html-sanitizer', '~> 1.2'
 gem 'rufus-scheduler', '~> 3.4.2', require: false
-gem 'sass-rails', '>= 6.0'
+gem 'sass-rails', '>= 6.0.0'
 gem 'select2-rails', '~> 3.5.4'
 gem 'spectrum-rails'
 gem 'execjs', '~> 2.7.0'
