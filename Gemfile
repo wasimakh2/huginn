@@ -33,21 +33,21 @@ gem 'twilio-ruby', '~> 3.11.5'    # TwilioAgent
 gem 'ruby-growl', '~> 4.1.0'      # GrowlAgent
 gem 'net-ftp-list', '~> 3.2.8'    # FtpsiteAgent
 gem 'forecast_io', '~> 2.0.0'     # WeatherAgent
-gem 'rturk', '~> 2.12.1'          # HumanTaskAgent
+gem 'rturk', '~> 2.12.1' # HumanTaskAgent
 gem 'erector', github: 'dsander/erector', branch: 'rails6'
-gem 'hipchat', '~> 1.2.0'         # HipchatAgent
+gem 'hipchat', '~> 1.2.0' # HipchatAgent
 gem 'mini_racer', '~> 0.2.4'      # JavaScriptAgent
 gem 'xmpp4r',  '~> 0.5.6'         # JabberAgent
 gem 'mqtt'                        # MQTTAgent
 gem 'slack-notifier', '~> 1.0.0'  # SlackAgent
-gem 'hypdf', '~> 1.0.10'          # PDFInfoAgent
+gem 'hypdf', '~> 1.0.10' # PDFInfoAgent
 
 # Weibo Agents
 # FIXME needs to loosen omniauth dependency, add rest-client
 gem 'weibo_2', github: 'albertsun/weibo_2', branch: 'master'
 
 # GoogleCalendarPublishAgent and GoogleTranslateAgent
-gem 'google-api-client', '~> 0.13'
+gem 'google-api-client', '~> 0.13', '>= 0.13.0'
 gem 'google-cloud-translate', '~> 1.0.0', require: 'google/cloud/translate'
 
 # Twitter Agents
@@ -89,40 +89,40 @@ unless Gem::Version.new(Bundler::VERSION) >= Gem::Version.new('1.5.0')
 end
 
 gem 'ace-rails-ap', '~> 2.0.1'
-gem 'bootstrap-kaminari-views', '~> 0.0.3'
+gem 'bootstrap-kaminari-views', '~> 0.0.5'
 gem 'bundler', '>= 1.5.0'
-gem 'coffee-rails', '~> 5'
+gem 'coffee-rails', '~> 5', '>= 5.0.0'
 gem 'daemons', '~> 1.1.9'
-gem 'delayed_job', '~> 4.1.8'
+gem 'delayed_job', '~> 4.1.9'
 gem 'delayed_job_active_record', github: 'dsander/delayed_job_active_record', branch: 'rails6-zeitwerk'
 gem 'devise', '~> 4.7.1'
-gem 'em-http-request', '~> 1.1.2'
+gem 'em-http-request', '~> 1.1.6'
 gem 'faraday', '~> 0.9'
 gem 'faraday_middleware', '~> 0.12.2'
-gem 'feedjira', '~> 3.1'
+gem 'feedjira', '~> 3.1', '>= 3.1.0'
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'foreman', '~> 0.63.0'
 gem 'geokit', '~> 1.8.4'
 gem 'geokit-rails', '~> 2.2.0'
-gem 'httparty', '~> 0.13'
+gem 'httparty', '~> 0.21', '>= 0.21.0'
 gem 'httmultiparty', '~> 0.3.16'
-gem 'jquery-rails', '~> 4.2.1'
+gem 'jquery-rails', '~> 4.4.0'
 gem 'huginn_agent', '~> 0.4.0'
 gem 'json', '~> 2.3'
 gem 'jsonpath', '~> 1.0.1'
-gem 'kaminari', '~> 1.1.1'
-gem 'kramdown', '~> 1.3.3'
+gem 'kaminari', '~> 1.2.1'
+gem 'kramdown', '~> 2.3.0'
 gem 'liquid', '~> 4.0.3'
-gem 'loofah', '~> 2.0'
+gem 'loofah', '~> 2.19', '>= 2.19.1'
 gem 'mini_magick', ">= 4.9.4"
 gem 'multi_xml'
-gem "nokogiri", ">= 1.10.8"
-gem 'omniauth', '~> 1.6.1'
-gem 'rails', '~> 6.0.3.1'
-gem 'sprockets', '~> 3.7.2'
-gem 'rails-html-sanitizer', '~> 1.2'
+gem "nokogiri", ">= 1.13.9"
+gem 'omniauth', '~> 2.1.0'
+gem 'rails', '~> 6.1.7.3'
+gem 'sprockets', '~> 4.2.0'
+gem 'rails-html-sanitizer', '~> 1.4', '>= 1.4.4'
 gem 'rufus-scheduler', '~> 3.4.2', require: false
-gem 'sass-rails', '>= 6.0'
+gem 'sass-rails', '>= 6.0.0'
 gem 'select2-rails', '~> 3.5.4'
 gem 'spectrum-rails'
 gem 'execjs', '~> 2.7.0'
@@ -131,14 +131,14 @@ gem 'uglifier', '~> 2.7.2'
 gem 'bootsnap', '~> 1.4.4', require: false
 
 group :development do
-  gem 'better_errors', '~> 1.1'
+  gem 'better_errors', '~> 2.8', '>= 2.8.0'
   gem 'binding_of_caller', '~> 0.8.0'
   gem 'guard', '~> 2.14.1'
-  gem 'guard-livereload', '~> 2.5.1'
+  gem 'guard-livereload', '~> 2.5.2'
   gem 'guard-rspec', '~> 4.7.3'
   gem 'rack-livereload', '~> 0.3.16'
   gem 'letter_opener_web', '~> 1.3.1'
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 3.3.1'
 
   gem 'capistrano', '~> 3.11.0'
   gem 'capistrano-rails', '~> 1.1'
@@ -152,7 +152,7 @@ group :development do
 
   group :test do
     gem 'coveralls', '~> 0.8.23', require: false
-    gem 'capybara', '~> 2.18'
+    gem 'capybara', '~> 2.18', '>= 2.18.0'
     gem 'capybara-screenshot'
     gem 'capybara-select-2', github: 'Hirurg103/capybara_select2', ref: 'fbf22fb74dec10fa0edcd26da7c5184ba8fa2c76', require: false
     gem 'poltergeist'
@@ -162,7 +162,7 @@ group :development do
     gem 'rspec', '~> 3.8'
     gem 'rspec-rails'
     gem 'rspec-collection_matchers', '~> 1.1.0'
-    gem 'rspec-html-matchers', '~> 0.8'
+    gem 'rspec-html-matchers', '~> 0.9', '>= 0.9.1'
     gem 'rails-controller-testing'
     gem 'shoulda-matchers'
     gem 'vcr'
@@ -177,7 +177,7 @@ end
 # Platform requirements.
 require 'rbconfig'
 gem 'ffi', '>= 1.9.4'		# required by typhoeus; 1.9.4 has fixes for *BSD.
-gem 'tzinfo', '>= 1.2.0'	# required by rails; 1.2.0 has support for *BSD and Solaris.
+gem 'tzinfo', '>= 1.2.10' # required by rails; 1.2.0 has support for *BSD and Solaris.
 # Windows does not have zoneinfo files, so bundle the tzinfo-data gem.
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 # BSD systems require rb-kqueue for "listen" to avoid polling for changes.
